@@ -29,18 +29,14 @@ function buildTable(array) {
         tableRow.querySelector('[data-id="countingInterest"]').innerText = countingInterest;
         tableRow.querySelector('[data-id="Balance"]').innerText = Balance;
         table.appendChild(tableRow);
-        
-        document.getElementById('monthlyPayment').innerHTML = Payment;
-        document.getElementById('totalPrincipal').innerHTML = totalPrincipal;
-        document.getElementById('totalInterest').innerHTML = totalInterest;
-        document.getElementById('totalCost').innerHTML = totalCost;
+
+        let totalPrincipal = '';
+        let totalInterest += Interest;
+        let totalCost = '';
     }
+    document.getElementById('monthlyPayment').innerHTML = Payment;
+    document.getElementById('totalPrincipal').innerHTML = totalPrincipal;
+    document.getElementById('totalInterest').innerHTML = totalInterest;
+    document.getElementById('totalCost').innerHTML = totalCost;
 
 }
-
-// function displayStats() {
-//     document.getElementById('monthlyPayment').innerHTML = monthlyPayment;
-//     document.getElementById('totalPrincipal').innerHTML = totalPrincipal;
-//     document.getElementById('totalInterest').innerHTML = totalInterest;
-//     document.getElementById('totalCost').innerHTML = totalCost;
-// }
