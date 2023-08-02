@@ -60,25 +60,25 @@
             <div class="col col-md-4">
                 <form id="inputForm">
                     <label for="loanAmount" class="form-label">Loan Amount</label>
-                    <input id="loanAmount" class="form-control" name="loanAmount" type="text" aria-label="loan amount" required />
+                    <input id="loanAmount" class="form-control" name="loanAmount" type="number" aria-label="loan amount" required />
                     <label for="term" class="form-label">Term (Months)</label>
-                    <input id="term" class="form-control" name="term" type="text" aria-label="term" required />
+                    <input id="term" class="form-control" name="term" type="number" aria-label="term" required />
                     <label for="interestRate" class="form-label">Interest Rate</label>
-                    <input id="interestRate" class="form-control" name="interestRate" type="text" aria-label="Interest Rate" required />
+                    <input id="interestRate" class="form-control" name="interestRate" type="number" aria-label="Interest Rate" required />
                 </form>
                 <button type="button" class="btn btn-primary" onclick="getInput()">Calculate</button>
             </div>
             <div class="col col-md-8 text-center">
                 <h1>Your Monthly Payments</h1>
-                <h2>$<span id="monthlyPayment"></span></h2>
+                <h2><span id="monthlyPayment"></span></h2>
                 <p>
-                    Total Principal $<span id="totalPrincipal"></span>
+                    Total Principal <span id="totalPrincipal"></span>
                 </p>
                 <p>
-                    Total Interest $<span id="totalInterest"></span>
+                    Total Interest <span id="totalInterest"></span>
                 </p>
                 <p>
-                    Total Cost $<span id="totalCost"></span>
+                    Total Cost <span id="totalCost"></span>
                 </p>
             </div>
             <div class="col col-md-12">
