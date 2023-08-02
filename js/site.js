@@ -17,7 +17,8 @@ function buildTable(array) {
     let Interest = '';
     let countingInterest = '';
     let Balance = '';
-    
+    let totalInterest = '';
+
     for (let i = 1; i <= array[1]; i++) {
         let Month = i;
         let tableRow = rowTemplate.content.cloneNode(true);
@@ -31,7 +32,7 @@ function buildTable(array) {
         table.appendChild(tableRow);
 
         let totalPrincipal = '';
-        let totalInterest += Interest;
+        totalInterest += Interest;
         let totalCost = '';
     }
     document.getElementById('monthlyPayment').innerHTML = Payment;
